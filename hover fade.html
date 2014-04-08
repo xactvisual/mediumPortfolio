@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>jQuery hover/fade effect B&amp;W - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        /*
+the prefix fd-
+is used as an abbreviation for
+fade,
+and to clearly indicate it is not a Bootstrap class
+
+B&W images are in background-image
+*/
+
+body{
+color: white;
+background-color:#111;
+}
+
+.fd-fade1 {
+  width: 240px;
+  height: 180px;
+  background-image: url(http://i.imgur.com/jfyEocn.jpg)
+}
+.fd-fade2 {
+  width: 240px;
+  height: 160px;
+  background-image: url(http://i.imgur.com/l1YVUSu.jpg)
+}
+.fd-fade3 {
+  width: 240px;
+  height: 152px;
+  background-image: url(http://i.imgur.com/6XO7ueG.jpg)
+}
+
+/*hide all the images, so background image shows*/
+img.fd-img1 {
+  display: none;
+}
+img.fd-img2 {
+  display: none;
+}
+img.fd-img3 {
+  display: none;
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- SUBMITTED March 28, 2014 at 9:42am  -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+             <h2>jQuery hover/fade effect <small>Black and White</small></h2>
+
+            <p>Unlike some CSS3 techniques this works in all modern browsers. It swaps the image to achieve desired effects with <strong>only 6 lines</strong> of jQuery.  This "older" method of swapping images seems to load faster than the CSS <code>-webkit-filter</code> etc.</p>
+        </div>
+        <!-- /.col-md-12 -->
+    </div> <!-- ./row -->
+    
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Example 1</h3>
+
+            <div class="fd-fade1 fd-effect">
+                <img src="http://i.imgur.com/yxAxCaK.jpg" class="fd-img1" alt="">
+            </div>
+            <!-- /.fd-fade -->
+            <br> <a href="https://flic.kr/p/2fLGw" target="_blank">Flickr CC: view from villa gimbrone</a>
+
+        </div> <!-- /.col-md-4 -->
+        
+        <div class="col-md-4">
+            <h3>Example 2</h3>
+
+            <div class="fd-fade2 fd-effect">
+                <img src="http://i.imgur.com/jlattvQ.jpg" class="fd-img2" alt="">
+            </div>
+            <!-- /. fd-fade -->
+            <br> <a href="https://flic.kr/p/8j6EeB" target="_blank">Flickr CC: Leigh-on-Sea</a>
+
+        </div> <!-- /.col-md-4 -->
+        
+        <div class="col-md-4">
+            <h3>Example 3</h3>
+
+            <div class="fd-fade3 fd-effect">
+                <img src="http://i.imgur.com/XqtS5WA.jpg" class="fd-img3" alt="">
+            </div> <!-- /. fd-fade -->
+            
+            <br> <a href="https://www.flickr.com/photos/18213948@N00/11835207236/in/photolist-j2QwMb-69zusC-5mkvTw-6QLANd-FbY8M-GCFnr-GCFja-GCCKq-8j6EeB-e34J9w-cK3dqs-9fdiBA-GCFkP-4aPVes-GCFeK-98sKbD-61gbaT-gD4XyF-agvUjC-ecTvk6-6YNLLG-6YNGAQ-PPDKx-fGXPm-fGXPn-fGYyd-fGYyh-aggmh3-FxnHY-fGYyf-fGYy7-fGYyb-fGYy9-fGXPk-fGXPo-4DV13v-GCCXd-GCFpK-GCCVf-4GHjK-4GHjL-4GHjM-fcPdM-GCFyn-8un928-GCCZo-4Tsma2-85esrE-9yvwQS-6p76XM-4NdW3y#" target="_blank">Flickr CC: seaside</a>
+
+        </div><!-- /.col-md-4 -->
+    </div> <!-- /.row -->
+    
+    <div class="row">
+        <div class="col-md-12">
+            <hr>Other images on page are <strong>not</strong> effected since there is no
+           <br>
+            <code>class="fd-fade3 fd-effect"</code>
+            <br><br>
+            <img src="http://i.imgur.com/6XO7ueG.jpg" width="150" alt="">
+            <hr>
+          
+            <p> <a href="http://validator.w3.org/check?uri=http%3a%2f%2fbootsnipp.com%2fiframe%2f7ORr;ss=1"><span class="glyphicon glyphicon-check" style="color: #339900;"></span><small> HTML</small><sup>5</sup></a>
+
+            </p>
+        </div><!-- /.col-md-12 -->
+    </div> <!-- /.row -->
+</div> <!-- /. container --><script type="text/javascript">
+/*
+Ref: http://api.jquery.com/hover/
+Calling $( selector ).hover( handlerIn, handlerOut ) is shorthand for:
+$( selector ).mouseenter( handlerIn ).mouseleave( handlerOut );
+
+Thanks to: Serlite
+for streamline code from 26 lines to ONLY 6 lines,
+because of use of $(this) trick.
+ref:
+http://stackoverflow.com/questions/22702324/jquery-using-this-thumbnails-swap-images-twitter-bootstrap
+jsFidde:
+http://jsfiddle.net/An2EK/2/
+and best to use .stop
+http://jsfiddle.net/jHUV7/1/
+*/
+
+$(document).ready(function () {
+    $('.fd-effect').hover(function () {
+        $(this).children("img").stop().fadeIn('slow');  // add .stop() to prevent event chaining
+    }, function () {
+        $(this).children("img").stop().fadeOut("slow");
+    });  // end .fd-effect
+
+}); // end document.ready function</script>
+</body>
+</html>

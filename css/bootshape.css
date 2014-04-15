@@ -57,6 +57,11 @@ section {
   padding: 40px 0 0 0;
   color: #ececec;
 }
+
+.promo-img{
+  top: -200px;
+}
+
 .promo .brand-holder {
   display: inline-block;
 }

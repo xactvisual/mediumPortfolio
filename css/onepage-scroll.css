@@ -99,43 +99,4 @@ background-color:#fff;
 
 }
 
-.fd-fade1 {
-  width: 270px;
-  height: 180px;
-  background-size: 270px 180px;
-  background-image: url(http://i.imgur.com/eVGK11M.jpg);
-}
-.fd-fade2 {
- width: 270px;
-  height: 180px;
-  background-size: 270px 180px;
-  background-image: url(http://i.imgur.com/7hS3jEP.jpg);
-}
-.fd-fade3 {
-  width: 270px;
-  height: 180px;
-  background-size: 270px 180px;
-  background-image: url(http://i.imgur.com/B4CSY9f.jpg);
-}
-
-/*hide all the images, so background image shows*/
-img.fd-img1 {
-  display: none;
-   width: 270px;
-  height: 180px;
-   background-size: 270px 180px;
-}
-img.fd-img2 {
-  display: none;
-   width: 270px;
-  height: 180px;
-   background-size: 270px 180px;
-}
-img.fd-img3 {
-  display: none;
-   width: 270px;
-  height: 180px;
-   background-size: 270px 180px;
-}
-
 

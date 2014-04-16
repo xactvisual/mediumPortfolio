@@ -25,6 +25,8 @@
 		<script src="js/hover.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/thumb.css" />
 
+		<!-- overlay -->
+		<link rel="stylesheet" type="text/css" href="css/overlay.css" />
 
 		<!-- custom styling -->
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -120,7 +122,25 @@
 					</figure>
 				</a>
 
+				<p><button class='btn-default' id="trigger-overlay" type='button'>Open Overlay</button></p>
+
 			</section>
+
+
+				
+
+			<div class="overlay overlay-contentscale">
+				<button type="button" class="overlay-close">Close</button>
+				<nav>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Work</a></li>
+						<li><a href="#">Clients</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 			
 			<nav id="bt-menu" class="bt-menu">
 				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -142,6 +162,7 @@
 		<script src="js/classie.js"></script>
 		<script src="js/tiltSlider.js"></script>
 		<script src="js/borderMenu.js"></script>
+		<script src="js/overlay.js"></script>
 		<script>
 			new TiltSlider( document.getElementById( 'slideshow' ) );
 		</script>

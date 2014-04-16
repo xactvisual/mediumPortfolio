@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Xact Visual</title>
+		<meta name="description" content="Tilted Content Slideshow: Recreating the FWA.com landing page perspective slider" />
+		<meta name="keywords" content="fwa slider, perspective, 3d, slideshow, animation, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<!-- menu border -->
+
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+		<!-- thumbs -->
+
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/hover.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/thumb.css" />
+
+
+		<!-- custom styling -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="slideshow" id="slideshow">
+				<ol class="slides">
+					<li class="current">
+						<div class="description">
+							<h2>Shmevin</h2>
+							<p>Up coming flash game. <a href="http://www.xactvisual.ca/shmevin">Try the beta!</a></p>
+						</div>
+						<div class="tiltview col">
+							<a href="http://www.xactvisual.ca/shmevin"><img src="img/shmevinGameplay.jpg"/></a>
+							<a href="http://www.xactvisual.ca/shmevin"><img src="img/shmevinMenu.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="description">
+							<h2>SCVRS.</h2>
+							<p>Video Coming Soon.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="http://soundcloud.com/scvrs"><img src="img/lando1.jpg"/></a>
+							<a href="http://soundcloud.com/scvrs"><img src="img/lando2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="description">
+							<h2>Codrops</h2>
+							<p>This slider and other elements of this page are from <a href="http://tympanus.net/codrops/">Codrops</a></p>
+						</div>
+						<div class="tiltview col">
+							<a href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"><img src="img/codrops1.jpg"/></a>
+							<a href="http://tympanus.net/codrops/2014/03/13/tilted-content-slideshow/"><img src="img/codrops2.jpg"/></a>
+						</div>
+					</li>
+					<li>
+						<div class="description">
+							<h2>Boshkung Brewing</h2>
+							<p>Haliburtons up coming brewery.</p>
+						</div>
+						<div class="tiltview col">
+							<a href="http://boshkungbrewing.com/"><img src="img/boshkung1.jpg"/></a>
+							<a href="http://boshkungbrewing.com/"><img src="img/boshkung2.jpg"/></a>
+						</div>
+					</li>
+				</ol>
+			</div><!-- /slideshow -->
+
+			<section id="grid" class="grid clearfix">
+				<a href="http://www.xactvisual.ca/shmevin" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/shmevinGameplayTall.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Shrunken Shmevin</h2>
+							<p>Try the beta!</p>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="http://soundcloud.com/scvrs" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/lando1Tall.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>SCVRS</h2>
+							<p>I'll get these out eventually...</p>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="http://boshkungbrewing.com/" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/boshkung1Tall.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Boshkung Brewery</h2>
+							<p>Good be...</p>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/7.png" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Languid</h2>
+							<p>Beetroot water spinach okra water.</p>
+						</figcaption>
+					</figure>
+				</a>
+
+			</section>
+			
+			<nav id="bt-menu" class="bt-menu">
+				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<ul>
+					<li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
+					<li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
+					<li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
+					<li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
+				</ul>
+			</nav>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/tiltSlider.js"></script>
+		<script src="js/borderMenu.js"></script>
+		<script>
+			new TiltSlider( document.getElementById( 'slideshow' ) );
+		</script>
+
+		<!-- thumbs -->
+
+		<script>
+			(function() {
+	
+				function init() {
+					var speed = 250,
+						easing = mina.easeinout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+
+	</body>
+</html>

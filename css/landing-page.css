@@ -168,7 +168,6 @@ p.copyright {
 	width: 40px;
 }
 
-
 body.modal-open #wrap{
     -webkit-filter: blur(7px);
     -moz-filter: blur(15px);
@@ -189,11 +188,21 @@ body.modal-open #wrap{
 	color: #ccc;
 }
 
-nav li{
-	font-size: 1.1em;
+nav a{
+
+	font-size: 18px;
+	line-height: 1.33;
+	color: #999;
+	text-decoration: none;
 }
 
+nav a:hover, nav a:active{
 
+	font-size: 18px;
+	line-height: 1.33;
+	color: #666;
+	text-decoration: none;
+}
 
 
 

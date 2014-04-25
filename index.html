@@ -1,202 +1,229 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>Xact Visual</title>
-		<meta name="description" content="Tilted Content Slideshow: Recreating the FWA.com landing page perspective slider" />
-		<meta name="keywords" content="fwa slider, perspective, 3d, slideshow, animation, web design" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico">
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
+<html lang="en">
 
-		<!-- menu border -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-		<link rel="stylesheet" type="text/css" href="css/icons.css" />
-		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <title>Xact Visual</title>
 
-		<!-- thumbs -->
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-		<script src="js/snap.svg-min.js"></script>
-		<script src="js/hover.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/thumb.css" />
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 
-		<!-- overlay -->
-		<link rel="stylesheet" type="text/css" href="css/overlay.css" />
+   
 
-		<!-- custom styling -->
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Add custom CSS here -->
+    <link href="css/landing-page.css" rel="stylesheet">
 
-		<script src="js/modernizr.custom.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="slideshow" id="slideshow">
-				<ol class="slides">
-					<li class="current">
-						<div class="description">
-							<h2>Shmevin</h2>
-							<p>Up coming flash game. <a href="http://www.xactvisual.ca/shmevin">Try the beta!</a></p>
-						</div>
-						<div class="tiltview col">
-							<a href="http://www.xactvisual.ca/shmevin"><img src="img/shmevinGameplay.jpg"/></a>
-							<a href="http://www.xactvisual.ca/shmevin"><img src="img/shmevinMenu.jpg"/></a>
-						</div>
-					</li>
-					<li>
-						<div class="description">
-							<h2>SCVRS.</h2>
-							<p>Video Coming Soon.</p>
-						</div>
-						<div class="tiltview col">
-							<a href="http://xactvisual.ca/deadstar"><img src="img/lando1.jpg"/></a>
-							<a href="http://xactvisual.ca/deadstar"><img src="img/lando2.jpg"/></a>
-						</div>
-					</li>
-					<li>
-						<div class="description">
-							<h2>Codrops</h2>
-							<p>This slider and other elements of this page are from <a href="http://tympanus.net/codrops/">Codrops</a></p>
-						</div>
-						<div class="tiltview col">
-							<a href="http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/"><img src="img/codrops1.jpg"/></a>
-							<a href="http://tympanus.net/codrops/2014/03/13/tilted-content-slideshow/"><img src="img/codrops2.jpg"/></a>
-						</div>
-					</li>
-					<li>
-						<div class="description">
-							<h2>Boshkung Brewing</h2>
-							<p>Haliburtons up coming brewery.</p>
-						</div>
-						<div class="tiltview col">
-							<a href="http://boshkungbrewing.com/"><img src="img/boshkung1.jpg"/></a>
-							<a href="http://boshkungbrewing.com/"><img src="img/boshkung2.jpg"/></a>
-						</div>
-					</li>
-				</ol>
-			</div><!-- /slideshow -->
+</head>
 
-			<section id="grid" class="grid clearfix">
-				<a href="http://www.xactvisual.ca/shmevin" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-					<figure>
-						<img src="img/shmevinGameplayTall.jpg" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-						<figcaption>
-							<h2>Shrunken Shmevin</h2>
-							<p>Try the beta!</p>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="http://soundcloud.com/scvrs" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-					<figure>
-						<img src="img/lando1Tall.jpg" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-						<figcaption>
-							<h2>SCVRS</h2>
-							<p>I'll get these out eventually...</p>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="http://boshkungbrewing.com/" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-					<figure>
-						<img src="img/boshkung1Tall.jpg" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-						<figcaption>
-							<h2>Boshkung Brewery</h2>
-							<p>Good be...</p>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
-					<figure>
-						<img src="img/7.png" />
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
-						<figcaption>
-							<h2>Languid</h2>
-							<p>Beetroot water spinach okra water.</p>
-						</figcaption>
-					</figure>
-				</a>
+<body>
 
-				<p><button class='btn-default' id="trigger-overlay" type='button'>Open Overlay</button></p>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://xactvisual.ca/"><img src='img/logoSquare.png' class='logo' alt='xact' />Xact Visual</a>
+            </div>
 
-			</section>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                     About
+                    </button>
+                    </li>
+                    <li><button class="btn btn-primary btn-lg" ><a href='#work'>Work</a>
+                    </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="intro-header">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Xact Visual</h1>
+                        <h3>Get it right</h3>
+                        <hr class="intro-divider">
+                        <br>
+                        <ul class="list-inline intro-social-buttons">
+                            <li><a href="https://twitter.com/xactlie" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            </li>
+                            <li><a href="http://www.facebook.com/snow.n.skate" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">FaceBook</span></a>
+                            </li>
+                            <li><a href="http://www.linkedin.com/in/jmaconachie/" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+    <div class="content-section-a" id="work">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Shrunkin Shmevin </h2>
+                    <p class="lead">Help Shrunkin' Shmevin find the magic potion! It will reverse the body-size-altering voodoo his angry students have cursed upon him.<a target="_blank" href="http://shrunkinShmevin.com/"> Play the game now!</a> </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/shmevinIpad.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Boshkung Brewing</h2>
+                    <p class="lead">The newest Brewery coming to Haliburton <a target="_blank" href="http://boshkungbrewing.com/">Check it out</a>!</p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                    <img class="img-responsive" src="img/boshkung.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div> <h2 class="section-heading">Dead Star</h2>
+                        <p class="lead">Help the Rebel Fleet to destroy the Dead Star!<a target="_blank" href="http://xactvisual.ca/deadstar"> Play it</a>!</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/deadStarIphone.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Reach me:</h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li><a href="tel:1-705-718-5555" class="btn btn-default btn-lg"><i class="fa fa-phone fa-fw"></i> <span class="network-name">(705) 718 5555</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright text-muted small">Copyright &copy; Xact Visual 2013.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <h1>About</h1>
+            <p><br><br><br><br>Ut adipiscing et neque nec suscipit. Nulla facilisi. Praesent scelerisque mauris eget lectus ornare, eget sollicitudin enim dignissim. Donec lobortis diam ut consequat sollicitudin. Pellentesque viverra scelerisque lectus eget pulvinar. Vestibulum eget tincidunt lectus.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3 text-center">
+            <h1>Work</h1>
+            <h2>all work</h2>
 
 
-				
 
-			<div class="overlay overlay-contentscale">
-				<button type="button" class="overlay-close">Close</button>
-				<nav>
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Clients</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			
-			<nav id="bt-menu" class="bt-menu">
-				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-				<ul>
-					<li><a href="#">About us</a></li>
-					<li><a href="#">Work</a></li>
-					<li><a href="#">Clients</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				<ul>
-					<li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
-					<li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-gplus">Google+</a></li>
-					<li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-facebook">Facebook</a></li>
-					<li><a href="https://github.com/codrops" class="bt-icon icon-github">icon-github</a></li>
-				</ul>
-			</nav>
-		</div><!-- /container -->
-		<script src="js/classie.js"></script>
-		<script src="js/tiltSlider.js"></script>
-		<script src="js/borderMenu.js"></script>
-		<script src="js/overlay.js"></script>
-		<script>
-			new TiltSlider( document.getElementById( 'slideshow' ) );
-		</script>
+           
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- thumbs -->
+    <!-- JavaScript -->
+    <script type="text/javascript">
 
-		<script>
-			(function() {
-	
-				function init() {
-					var speed = 250,
-						easing = mina.easeinout;
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', ' UA-38738812-1']);
+      _gaq.push(['_trackPageview']);
 
-					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
-						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
-							pathConfig = {
-								from : path.attr( 'd' ),
-								to : el.getAttribute( 'data-path-hover' )
-							};
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-						el.addEventListener( 'mouseenter', function() {
-							path.animate( { 'path' : pathConfig.to }, speed, easing );
-						} );
+    </script>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-						el.addEventListener( 'mouseleave', function() {
-							path.animate( { 'path' : pathConfig.from }, speed, easing );
-						} );
-					} );
-				}
+</body>
 
-				init();
-
-			})();
-		</script>
-
-	</body>
 </html>

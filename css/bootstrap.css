@@ -3650,7 +3650,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
 }
 @media (min-width: 768px) {
   .navbar {
@@ -3797,29 +3796,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
-@media (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu {
-    position: static;
-    float: none;
-    width: auto;
-    margin-top: 0;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-  .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
-  .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 20px;
-  }
-  .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-nav .open .dropdown-menu > li > a:focus {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -3834,15 +3810,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav.navbar-right:last-child {
     margin-right: -15px;
   }
-}
-@media (min-width: 768px) {
+
   .navbar-left {
     float: left !important;
   }
   .navbar-right {
     float: right !important;
   }
-}
+
 .navbar-form {
   padding: 10px 15px;
   margin-top: 8px;
